@@ -1,44 +1,26 @@
-document.addEventListener("DOMContentLoaded", async function(){
-    const container = document.getElementById(container);
-    const resposta = await fetch(
-        "https://viacep.com.br/ws/01001000/json/"
-    )
+document.getElementById('cepForm').addEventListener('submit', async function(event) {
+  event.preventDefault();
+  const cep = document.getElementById('cep').value;
 
-    const dados = await resposta.json();
+  
+  try {
+    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    if (!response.ok) {
+      throw new Error('Erro ao buscar endereço.');
+    }
+    const data = await response.json();
+    preencherCampos(data);
+  } catch(error) {
+    console.error(error);
+    alert('Erro ao buscar endereço. Verifique se o CEP está correto.');
+  }
+});
 
-     dados.forEach(function(logradouro){
-        const logradouro = document.createElement("logradouro");
-        logradouro.id("logradouro");
-
-        const Complemento = document.createElement("complemento");
-        Complemento.id("complemento");
-
-        const bairro = document.createElement("bairro");
-        bairro.id("bairro");
-
-        const local = document.createElement("local");
-        local.id("local");
-
-        const uf = document.createElement("uf");
-        uf.id("uf");
-
-        const ddd = document.createElement("ddd");
-        ddd.id("ddd")
-
-        const cep = document.createElement("cep");
-        cep.id("cep");
-
-        const botao = document.createElement("botao");
-        botao.id("botao");
-
-        botao.appendChild(cep);
-
-    }       
-
-    
-
-    
-)
+function preencherCampos(data) {
+  document.getElementById('cepResultado').textContent = data.cep;
+  document.getElementById('logradouro').textContent = data.logradouro;
+  document.getElementById('complemento').textContent = data.complemento;
+  document.getElementById('bairro').textContent = data.bairro;
+  document.getElementById('localidade').textContent = data.localidade;
+  document.getElementById('uf').textContent = data.uf;
 }
-
-)
