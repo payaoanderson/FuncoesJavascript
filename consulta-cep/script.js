@@ -2,6 +2,11 @@ document.getElementById('cepForm').addEventListener('submit', async function(eve
   event.preventDefault();
   const cep = document.getElementById('cep').value;
 
+  document.addEventListener('DOMContentLoaded', function() {
+    Inputmask('99999-999').mask(document.getElementById('cep'));
+  });
+  
+
   
   try {
     const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
