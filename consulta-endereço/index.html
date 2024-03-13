@@ -1,59 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Consulta endereço</title>
-    <link rel="stylesheet" href="./estilo.css" />
-  </head>
-  <body>
-    <h1>Consulta de endereço</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de endereço</title>
+  <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+  <h1>Consulta de endereço</h1>
+  <form id="endereçoForm">
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" placeholder="Digite o CEP" required>
+    <button type="submit" id="botao">Consultar</button>
+    <button type="reset" id="botao2">Excluir</button>
+    <p>
+    <label for="endereço">Endereço: </label>
+    <input type="text" id="endereço" placeholder="Digite um Endereço">
+  </p>
+    
+  </form>
 
-    <fieldset class="containerPrincipal">
-      <legend>Dados De Endereço</legend>
-      <form id="enderecoForm">
-       <P>
-        <label for="CEP" id="cep">CEP:</label>
-        <input
-          type="text"
-          id="cep"
-          placeholder="Digite Um CEP"
-          required
+  <div id="resultado">
+    <p><strong>Complemento:</strong> <span id="complemento"></span></p>
+    <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+    <p><strong>Localidade:</strong> <span id="localidade"></span></p>
+    <p><strong>UF:</strong> <span id="uf"></span></p>
+  </div>
 
-        
-        />
-
-        <button type="submit" id="botao">Consultar</button>
-        <button type="reset" id="botao2">Excluir</button>
-    </P>
-        <label for="endereco">Endereço:</label>
-        <input
-          type="text"
-          id="endereco"
-          placeholder="Digite Um Logradouro"
-          required
-        />
-
-
-        <P>
-            <label for="CEP">Logradouro:</label>
-            <input
-              type="text"
-              id="logradouro"
-              placeholder="Digite Um Logradouro"
-              required
-            />
-        </P>
-        
-      </form>
-
-      <div id="resultado">
-        <p><strong>Complemento:</strong> <span id="complemento"></span></p>
-        <p><strong>Bairro:</strong> <span id="bairro"></span></p>
-        <p><strong>Localidade:</strong> <span id="localidade"></span></p>
-        <p><strong>UF:</strong><span id="uf"></span></p>
-        <p><strong>DDD:</strong><span id="DDD"></span></p>
-      </div>
-    </fieldset>
-  </body>
+  <script src="./script.js"></script>
+</body>
 </html>
+
