@@ -1,52 +1,36 @@
-body {
-  padding-top: 20px;
-  color: red;
-  background-color: #868686;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
 .container {
-  width: 60%;
-  font-size: 20px;
-  margin-left: 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-#Consulta {
-  margin-left: 80%;
+.form-group {
+  margin-bottom: 15px;
 }
 
-
-#estados {
-  padding: 10px;
-  border-radius: 20px;
-  width: 200px;
-
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-#cidade {
-  padding: 10px;
-  border-radius: 15px;
-  width: 350px;
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-
-#logradoro {
-  padding: 10px;
-  border-radius: 15px;
-  width: 300px;
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-
-#botao {
-  padding: 10px;
-  background-color: red;
-  border-radius: 20px;
-
-}
-
-
-#botao1 {
-  padding: 5px;
-  background-color: red;
-  border-radius: 20px;
+button:hover {
+  background-color: #0056b3;
 }

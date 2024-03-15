@@ -3,70 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta endereço</title>
+  <title>Consulta de endereço</title>
   <link rel="stylesheet" href="./estilo-endereço.css">
 </head>
 <body>
   <fieldset class="container">
-  <a href="index.html" id="Consulta">Consulta Do Seu Cep.</a>
+    <h1>Consulta de endereço</h1>
 
-  <h1>Consulta de cep por endereço</h1>
-  <p>Estado: 
-    <label for="estado" id="estado"></label>
-    <select name="" id="estados">
-      <option value="">Selecione um estados</option>
-      <option value="AC">Acre</option>
-      <option value="AL">Alagoas</option>
-      <option value="AP">Amapá</option>
-      <option value="AM">Amazonas</option>
-      <option value="BA">Bahia</option>
-      <option value="CE">Ceará</option>
-      <option value="DF">Distrito Federal</option>
-      <option value="ES">Espírito Santo</option>
-      <option value="GO">Goiás</option>
-      <option value="MA">Maranhão</option>
-      <option value="MT">Mato Grosso</option>
-      <option value="MS">Mato Grosso do Sul</option>
-      <option value="MG">Minas Gerais</option>
-      <option value="PA">Pará</option>
-      <option value="PB">Paraíba</option>
-      <option value="PR">Paraná</option>
-      <option value="PE">Pernambuco</option>
-      <option value="PI">Piauí</option>
-      <option value="RJ">Rio de Janeiro</option>
-      <option value="RN">Rio Grande do Norte</option>
-      <option value="RS">Rio Grande do Sul</option>
-      <option value="RO">Rondônia</option>
-      <option value="RR">Roraima</option>
-      <option value="SC">Santa Catarina</option>
-      <option value="SP">São Paulo</option>
-      <option value="SE">Sergipe</option>
-      <option value="TO">Tocantins</option>
-    </select>
-
-  </p>
-
-  <p>Cidade:  
-    <input type="text" id="cidade">
-  </p>
-  <p>Logradouro:
-    <input type="text" id="logradoro">
-
-  </p>
-
-  <button type="submit" id="botao"><strong>Consulta</strong></button>
-  <button type="reset" id="botao1"><strong>Limpar</strong></button>
-  <p><strong>Logradouro: </strong></p>
-  <p><strong>Bairro: </strong></p>
-  <p><strong>Complemento: </strong></p>
-  <p><strong>Cidade: </strong></p>
-  <p><strong>Estado: </strong></p>
-  <p><strong>DDD: </strong></p>
   
+    <form id="address-form">
+      <p>Estado:
+        <select id="estado">
+          <option value="">Selecione um estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+      </p>
+      <p>Cidade:  
+        <input type="text" id="cidade">
+      </p>
+      <p>Logradouro:
+        <input type="text" id="logradouro">
+      </p>
+      <button type="submit"><strong>Consultar</strong></button>
+    </form>
+    <div id="voltar">
+    <p><strong>Complemento:</strong> <span id="complemento"></span></p>
+    <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+    <p><strong>Localidade:</strong> <span id="localidade"></span></p>
+    <p><strong>UF:</strong> <span id="uf"></span></p>
+    <p><strong>DDD:</strong> <span id="ddd"></span></p>
+  </div>
+  </fieldset>
 
-</fieldset>
-
-<Script src="script-endereço.js"></Script>
-  
+  <script src="./script-endereco.js"></script>
 </body>
 </html>
