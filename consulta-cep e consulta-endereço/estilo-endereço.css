@@ -1,0 +1,52 @@
+body {
+  padding-top: 20px;
+  color: red;
+  background-color: #868686;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+  width: 60%;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#Consulta {
+  margin-left: 80%;
+}
+
+
+#estados {
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+
+}
+
+#cidade {
+  padding: 10px;
+  border-radius: 15px;
+  width: 350px;
+}
+
+
+#logradoro {
+  padding: 10px;
+  border-radius: 15px;
+  width: 300px;
+}
+
+
+#botao {
+  padding: 10px;
+  background-color: red;
+  border-radius: 20px;
+
+}
+
+
+#botao1 {
+  padding: 5px;
+  background-color: red;
+  border-radius: 20px;
+}
