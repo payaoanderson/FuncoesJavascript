@@ -1,31 +1,20 @@
-body{
-  font-size: 20px;
-  color: red;
-  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #9c9999;
 }
 
 .container {
-  max-width: 500px;
+  max-width: 400px;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
 input[type="text"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  width: calc(100% - 80px);
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -33,10 +22,18 @@ button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
   background-color: #0056b3;
+}
+
+#endereco p {
+  margin: 5px 0;
+}
+
+#endereco strong {
+  margin-right: 5px;
 }

@@ -1,68 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta de endereço</title>
-  <link rel="stylesheet" href="./estilo-endereço.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Endereço por CEP</title>
+    <link rel="stylesheet" href="./estilo-endereço.css">
 </head>
 <body>
-  <fieldset class="container">
+    <div class="container">
 
-    <a href="index.html">consuta cep</a>
-    <h1>Consulta de endereço</h1>
+      <a href="index.html">Consulta cep</a>
+        <h1>Consulta de Endereço</h1>
+        <div>
+            <input type="text" id="enderecoInput" placeholder="Digite o endereço">
+            <button onclick="buscarCEP()">Buscar Endereço</button>
+        </div>
+        <div id="endereco">
+            <p><strong>CEP:</strong> <span id="cep"></span></p>
+            <p><strong>Logradouro:</strong> <span id="logradouro"></span></p>
+            <p><strong>Complemento:</strong> <span id="complemento"></span></p>
+            <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+            <p><strong>Localidade:</strong> <span id="localidade"></span></p>
+            <p><strong>UF:</strong> <span id="uf"></span></p>
+            <p><strong>DDD:</strong> <span id="ddd"></span></p>
+        </div>
+    </div>
 
-  
-    <form id="address-form">
-      <p>Estado:
-        <select id="estado">
-          <option value="">Selecione um estado</option>
-          <option value="AC">Acre</option>
-          <option value="AL">Alagoas</option>
-          <option value="AP">Amapá</option>
-          <option value="AM">Amazonas</option>
-          <option value="BA">Bahia</option>
-          <option value="CE">Ceará</option>
-          <option value="DF">Distrito Federal</option>
-          <option value="ES">Espírito Santo</option>
-          <option value="GO">Goiás</option>
-          <option value="MA">Maranhão</option>
-          <option value="MT">Mato Grosso</option>
-          <option value="MS">Mato Grosso do Sul</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="PA">Pará</option>
-          <option value="PB">Paraíba</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="PI">Piauí</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="RN">Rio Grande do Norte</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="RO">Rondônia</option>
-          <option value="RR">Roraima</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="SP">São Paulo</option>
-          <option value="SE">Sergipe</option>
-          <option value="TO">Tocantins</option>
-        </select>
-      </p>
-      <p>Cidade:  
-        <input type="text" id="cidade">
-      </p>
-      <p>Logradouro:
-        <input type="text" id="logradouro">
-      </p>
-      <button type="submit"><strong>Consultar</strong></button>
-    </form>
-    <div id="voltar">
-    <p><strong>Complemento:</strong> <span id="complemento"></span></p>
-    <p><strong>Bairro:</strong> <span id="bairro"></span></p>
-    <p><strong>Localidade:</strong> <span id="localidade"></span></p>
-    <p><strong>UF:</strong> <span id="uf"></span></p>
-    <p><strong>DDD:</strong> <span id="ddd"></span></p>
-  </div>
-  </fieldset>
-
-  <script src="./script-endereco.js"></script>
+    <script src="./script-endereço.js"></script>
 </body>
 </html>
