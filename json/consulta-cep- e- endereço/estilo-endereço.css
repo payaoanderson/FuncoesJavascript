@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: #727272;
+    color: red;
+    font-size: 20px;
+}
+
+
+#Estado {
+    width: 250px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+#Cidade {
+    width: 250px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+
+
+#Logradouro {
+    width: 250px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.botao {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: black;
+    font-size: 16px;
+}

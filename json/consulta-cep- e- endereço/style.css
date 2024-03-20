@@ -1,7 +1,7 @@
 body{
   text-align: center;
   background-color: rgb(102, 102, 102);
-  font-size: 20px;
+
 }
 
 #resultado {
@@ -20,14 +20,12 @@ body{
 
 #cep{
   border-radius: 10px;
-  padding: 10px;
 }
 
 
 #botao{
   background-color: blue;
   border-radius: 10px;
-  padding: 10px;
 
 }
 
@@ -35,6 +33,5 @@ body{
   background-color: blue;
   border-radius: 10px;
   width: 100px;
-  padding: 5px;
 
 }
